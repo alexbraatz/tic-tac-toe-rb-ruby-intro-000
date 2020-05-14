@@ -81,14 +81,8 @@ def won?(board)
   if position_taken[1] == "X" && position_taken[2] = "X" && position_taken[3]
       true
   elsif position_taken[1] == "O" && position_taken[2] = "O" && position_taken[3] = "O"
-    true 
+    true
   else
     false
   end
 end
-
-
-
-
-
-
