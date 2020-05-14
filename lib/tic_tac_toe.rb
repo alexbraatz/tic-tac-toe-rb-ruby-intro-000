@@ -44,7 +44,7 @@ def turn(board)
     move(board, index, char)
     display_board(board)
   else
-    t(board)
+    turn(board)
   end
 end
 
@@ -60,9 +60,9 @@ end
 def current_player(board)
   num_of_turns = turn_count
   if num_of_turns % 2 == 0
-    player = "O"
-  else
     player = "X"
+  else
+    player = "O"
   end
   return player
 end
