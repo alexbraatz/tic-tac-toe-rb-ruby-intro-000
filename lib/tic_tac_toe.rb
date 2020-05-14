@@ -120,6 +120,6 @@ def play(board)
   end
   if won?(board)
     puts "Congratulations #{winner(board)}!"
-  else 
-    puts "Issa Tie!"  
+  else
+    puts "Issa Tie!"
 end
