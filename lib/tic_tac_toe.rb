@@ -56,7 +56,6 @@ def turn_count(board)
     end
   end
   return turn
-end
 
 def current_player(board)
   num_of_turns = turn_count
