@@ -88,5 +88,7 @@ def won?(board)
 end
 
 def full?(board)
-  board.all? == "X" || "O"
+  board.all? do |char|
+    char = "X" || char == "O"
+  end  
 end
