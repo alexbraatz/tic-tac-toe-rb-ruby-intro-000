@@ -36,13 +36,13 @@ def valid_move?(board, index)
 end
 
 def turn_count(board)
-  turns = 0
+  n_turns = 0
   board.each do |index|
     if index == "X" || index == "O"
-      turns += 1
+      n_turns += 1
     end
   end
-  return turns
+  return n_turns
 end
 
 def current_player(board)
