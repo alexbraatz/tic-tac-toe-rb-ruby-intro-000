@@ -118,4 +118,8 @@ def play(board)
     current_player(board)
     turn(board)
   end
+  if won?(board)
+    puts "Congratulations #{winner(board)}!"
+  else 
+    puts "Issa Tie!"  
 end
