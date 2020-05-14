@@ -70,13 +70,13 @@ end
 
 def won?(board)
   WIN_COMBINATIONS.each do |win_combo|
-  index[0] = win_combo[0]
-  index[1] = win_combo[1]
-  index[2] = win_combo[2]
+    index[0] = win_combo[0]
+    index[1] = win_combo[1]
+    index[2] = win_combo[2]
 
-  position1 = index[0]
-  position2 = index[1]
-  position3 = index[2]
+    position1 = index[0]
+    position2 = index[1]
+    position3 = index[2]
 
     if position1 == "X" && position2 = "X" && position3 == "X"
       return win_combo
