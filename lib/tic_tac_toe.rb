@@ -55,7 +55,6 @@ def current_player(board)
   return player
 end
 
-
 def turn(board)
   puts "Let's play! Enter 1-9 to make a move: "
   user_input = gets.chomp
