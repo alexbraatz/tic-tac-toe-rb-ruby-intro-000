@@ -89,6 +89,6 @@ end
 
 def full?(board)
   board.all? do |char|
-    char = "X" || char == "O"
+    char == "X" || char == "O"
   end
 end
