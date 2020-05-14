@@ -46,7 +46,7 @@ def turn_count(board)
 end
 
 def current_player(board)
-  num_of_turns = turn_count
+  num_turns = turn_count(board)
   if num_of_turns % 2 == 0
     player = "X"
   else
