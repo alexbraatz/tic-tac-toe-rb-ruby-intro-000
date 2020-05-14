@@ -74,9 +74,9 @@ def won?(board)
     index2 = win_combo[1]
     index3 = win_combo[2]
 
-    position1 = index[0]
-    position2 = index[1]
-    position3 = index[2]
+    position1 = board[index1]
+    position2 = board[index2]
+    position3 = board[index3]
 
     if position1 == "X" && position2 = "X" && position3 == "X"
       return win_combo
