@@ -91,4 +91,5 @@ def full?(board)
   board.all? do |char|
     char = "X" || char == "O"
   end
+  return false
 end
