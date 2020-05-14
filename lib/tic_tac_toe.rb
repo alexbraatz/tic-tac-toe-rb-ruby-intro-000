@@ -35,19 +35,6 @@ def valid_move?(board, index)
   index.between?(0,8) && board[index] == " "
 end
 
-def turn(board)
-  puts "Let's play! Enter 1-9 to make a move: "
-  user_input = gets.chomp
-  index = input_to_index(user_input)
-  if valid_move?(board, index)
-    char = current_player(board)
-    move(board, index, char)
-    display_board(board)
-  else
-    turn(board)
-  end
-end
-
 def turn_count(board)
   turn = 0
   board.each do |index|
@@ -67,3 +54,20 @@ def current_player(board)
   end
   return player
 end
+
+
+def turn(board)
+  puts "Let's play! Enter 1-9 to make a move: "
+  user_input = gets.chomp
+  index = input_to_index(user_input)
+  if valid_move?(board, index)
+    char = current_player(board)
+    move(board, index, char)
+    display_board(board)
+  else
+    turn(board)
+  end
+end
+
+
+
