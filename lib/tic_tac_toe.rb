@@ -83,6 +83,6 @@ def won?(board)
         return win_combo
     end
   end
-  else  
+  else
   return false
 end
