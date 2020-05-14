@@ -69,19 +69,19 @@ def turn(board)
 end
 
 def won?(board)
-  WIN_COMBINATIONS.each do |win_combo|
-    index1 = win_combo[0]
-    index2 = win_combo[1]
-    index3 = win_combo[2]
+  WIN_COMBINATIONS.each do |win|
+    win_index_1 = win[0]
+    win_index_2 = win[1]
+    win_index_3 = win[2]
 
-    position1 = board[index1]
-    position2 = board[index2]
-    position3 = board[index3]
+    position_1 = board[win_index_1]
+    position_2 = board[win_index_2]
+    position_3 = board[win_index_3]
 
-    if position1 == "X" && position2 = "X" && position3 == "X"
-      return win_combo
-    elsif position1 == "O" && position2 = "O" && position3 = "O"
-      return win_combo
+    if position_1 == "X" && position_2 == "X" && position_3 == "X"
+      return win
+    elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
+      return win
     end
   end
   return false
